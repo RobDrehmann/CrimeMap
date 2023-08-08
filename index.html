@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + Svelte</title>
+    <!-- Vendor CSS Files -->
+  <link href="src/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="src/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="src/assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="src/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="src/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <link href="src/assets/css/variables.css" rel="stylesheet">
+  
+  <link href="src/assets/css/main.css" rel="stylesheet">
+
+  <script src="/src/NoDataMapData.js"></script>
+  <script src="/src/NoDataMap.js"></script>
+  <script src="/src/UnreportedMapData.js"></script>
+  <script src="/src/UnreportedMap.js"></script>
+  <script src="/src/ReportedMapData.js"></script>
+  <script src="/src/ReportedMap.js"></script>
+  <script src="/src/TotalMapData.js"></script>
+  <script src="/src/TotalMap.js"></script>
+    
+  </head>
+  <body>
+    <style>
+      #NoDataMap, #ReportedMap, #TotalMap, #UnreportedMap{
+        margin-left: 9vw;
+        height: 10vw;
+        width: 82vw;
+      }
+      
+
+    </style>
+    <div id="app">
+      
+    </div>
+    <div id="NoDataMap"></div>
+    <div id="ReportedMap"></div>
+    <div id="UnreportedMap"></div>
+    <div id="TotalMap"></div>
+    
+    
+    <script type="module" src="/src/main.js"></script>
+    <script>window.initMap = function ready() {
+      
+      }
+      </script>
+    <script defer async
+	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA1642C2Rxj_ySFKmvpYZQT6CkaKlXcblY&callback=initMap">
+	</script>
+    
+  </body>
+</html>
